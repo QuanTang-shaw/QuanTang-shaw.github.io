@@ -30,7 +30,6 @@
 	<div id="display"></div>
 
 	<script>
-
 	function addHandler(ele,event,fn) {
 		if (ele.addEventListener) {
 			ele.addEventListener(event, fn, false);
@@ -43,7 +42,11 @@
 		}
 	}
 
+/**
+ * 初始化
+ */
 
+ 
 	(function () {
 		
 		var oInput=document.querySelectorAll('input'),
@@ -67,9 +70,9 @@
 			addHandler(oBtn4,'click',function () {queue.rightOut();
 			});
 	})()
-
-	
-
+/**
+ * [queue description]创建队列对象
+ */
 	var queue={
 			str:[],
 			display:document.getElementById('display'),			
@@ -113,17 +116,20 @@
 				str+="<div>"+parseInt(cur)+"</div>";
 				});
 			display.innerHTML=str;
+			this.addDel();
 			},
 			delete:function (ID) {
 				this.str.splice(ID, 1);
 				this.paint();
 			},
 			addDel:function () {
+				var self=this;
 				for (let i = 0; i < this.display.childNodes.length; i++) {
-					addHandler(this.display.children[i],'cliclk',function () {
-						this.delete(i);
-					})
-				}
+					addHandler(this.display.children[i],'click',function () {
+						self.delete();
+					});
+					}
+				
 			}
 	}
 
