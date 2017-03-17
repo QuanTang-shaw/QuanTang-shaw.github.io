@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin: 0px;padding: 0px;}
+		.head{width: 100%;height: 50px;background-color: green;font-size: 130%;font-weight: bolder;}
+		.body{height:1500px;}
+		.cover{width: 100%;height:1500px;position: absolute;background-color:#3D565C;opacity: 0.3;/*filter: alpha(opacity40);*/z-index: 1;}
+		.login-box{border:solid 2px #80908D;border-radius: 5px;position:fixed;
+			/*left: 400px;top: 200px;*/width: 300px;height: 250px;background-color:#FFFFFF;
+			/*margin: 30px auto;*/z-index: 2;}
+		.login-head{width: 100%;height: 40px;}
+		.login-head span{position: absolute;font-size: 120%;left:10px;top: 10px;}.login-head img{position: absolute;top: 8px;right:5px;}
+		.login-input{width: 200px;margin: 10px auto;}.login-btn{width: 205px;margin: 20px auto;display:block;}.login-input input{margin-top: 10px;padding: 5px 0px;width: 200px;}
+		.login-btn{padding: 5px 20px;}
+	</style>
+</head>
+<body>
+	<div class="head"><span>登陆</span></div>
+	<div class="body">
+		<div class="cover" id="cover"></div>
+		<div class="login-box" id="login-box">
+			<div class="login-head"><span>登陆</span><img src="img/cancel.png" id="cancel" width="30" height="30"></div>
+			<div class="login-input">
+				<input type="text" placeholder="请输入用户名"><br>
+				<input type="text" placeholder="请输入密码">
+			</div>
+			<input type="button" value="登陆" class="login-btn">
+		</div>
+	</div>
+	<script src="tsk006.js"></script>
+</body>
+</html>

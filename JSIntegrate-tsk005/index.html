@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{margin: 0px;padding: 0px;}
+	.box{border:solid 2px ;border-radius: 5px;} 
+	.pieceBox{float: left;border-right: solid 1px #BBBBBB;border-bottom: solid 1px #BBBBBB;	width: 40px;height: 40px;background-color:#EDEFEF;}
+	.right-border{border-right:none;}.bottom-border{border-bottom: none;}
+	.piece{width: 40px;height: 32px;border-top: solid 8px red;position: absolute;background-color:#3CC4C4;transition: all 1s;}
+	.control{ width:300px;font-size: 130%;margin-top:20px;}
+	.control input{padding: 5px 10px;}
+	</style>
+</head>
+<body>
+	<div class="box" id="box">
+		
+	</div>
+	<div class="control">
+		<input type="text" id="text">
+		<input type="button" value="执行" id="btn">
+	</div>
+	<script src="chess.js"></script>
+</body>
+</html>
