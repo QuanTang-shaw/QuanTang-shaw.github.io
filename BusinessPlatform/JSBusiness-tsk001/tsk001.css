@@ -1,0 +1,11 @@
+	*{margin: 0px;padding: 0px;}
+	body{background-color:rgb(115,146,0);}
+	.color-select{position: absolute;background-color:#FFFFFF;border: solid 1px rgb(157,167,238);border-radius:5px;width: 700px;height:500px;padding:10px 10px ;}
+	.can1{position: absolute;border:solid 1px rgb(203,203,177);cursor: pointer;}
+	.can2{border:solid 1px rgb(203,203,177);position: absolute;left: 435px;cursor: pointer;}
+	.color-value{position:absolute;width: 230px;height: 450px;font-size: 130%;font-weight: bolder;right:10px;}
+	.rgb-input,.hsl-input{width: 60%;margin-top: 10px;height: 60px;border:solid 2px rgb(232,232,232);border-radius:5px;}
+	.text-input{height:40px;margin-top:8px;width:80px;margin-left:10px;font-weight: bold;}
+	.point{width:8px;background-color:rgb(255,255,182);height:8px;border:solid 4px red;border-radius:6px;position: absolute;}
+	.control{position:absolute;bottom: 20px;}.control input{padding:5px 10px;font-weight: bolder;margin-left:10px;}
+	.control-value{width:50px;}

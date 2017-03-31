@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="tsk001.css">
+</head>
+<body>
+	<div class="color-select" id="color-select">
+		<canvas width="400" height="450" class="can1">drawing something</canvas>
+		<canvas width="20" height="450" class="can2">drawing something</canvas>
+		<div class="point" id="point"></div>
+		<div class="color-value">
+			<div class="RGB-value">
+				<div class="rgb-input">
+					<span class="r">R</span>
+					<input type="text" class="text-input">
+				</div>
+				<div class="rgb-input">
+					<span class="g">G</span>
+					<input type="text" class="text-input">
+				</div>
+				<div class="rgb-input">
+					<span class="b">B</span>
+					<input type="text" class="text-input">
+				</div>
+			</div>
+			<div class="HSL-value">
+				<div class="hsl-input">
+					<span>H</span>
+					<input type="text" class="text-input">
+				</div>
+				<div class="hsl-input">
+					<span>S</span>
+					<input type="text" class="text-input">
+				</div>
+				<div class="hsl-input">
+					<span>L</span>
+					<input type="text" class="text-input">
+				</div>
+			</div>
+		</div>
+		<div class="control">
+			<input type="text" class="control-value"><input type="button" value="设置"><!-- </br> --><input type="button" value="获取"><b id="color-value"></b>
+		</div>
+	</div>
+	<script src="B-tsk001.js"></script>
+</body>
+</html>
