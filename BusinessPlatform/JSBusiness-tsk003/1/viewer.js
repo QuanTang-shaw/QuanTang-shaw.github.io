@@ -60,6 +60,7 @@ class Viewer {
    */
   updatePosition(event) {
     if (this.mousedown && event.buttons == 1) {
+
       this.x -= event.movementX / devicePixelRatio
       this.y -= event.movementY / devicePixelRatio
 
@@ -71,7 +72,7 @@ class Viewer {
       this.$yRange.value = this.$yRange.max - this.y
 
       // 触发 move 事件
-      this.$viewer.dispatchEvent(new CustomEvent('move', {
+      this.$viewer.dispatchEvent(new CustomEvent('move', {  //创建自定义事件
         detail: {
           x: this.x / this.sourceCanvas.width,
           y: this.y / this.sourceCanvas.height,
@@ -80,6 +81,8 @@ class Viewer {
 
       this.draw()
     }
+
+    console.log(this.$canvas.offsetLeft);
   }
 
   setPosition(position) {

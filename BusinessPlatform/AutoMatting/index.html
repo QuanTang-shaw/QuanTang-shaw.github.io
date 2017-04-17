@@ -5,6 +5,21 @@
 	<title>Document</title>
 </head>
 <body>
-	
+	<input type="file" id="tag">
+	<input type="button" accept="image">
+	<canvas id="canvas"></canvas>
+	<img src="" alt="" id="img">
+	<script>
+		let fileUpload=document.getElementsByTagName('input');
+		let canvas=document.getElementById('canvas');
+		let img=document.getElementById('img');
+
+
+		fileUpload[1].onclick=function () {
+		console.log(fileUpload[0].value);
+		img.src=fileUpload[0].value;
+
+		}
+	</script>
 </body>
 </html>

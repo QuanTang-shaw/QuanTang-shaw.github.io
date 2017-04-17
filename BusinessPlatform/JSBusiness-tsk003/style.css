@@ -1,0 +1,22 @@
+*{margin:0px;padding:0px;}
+.wrap{
+	width:720px;
+	height:400px;
+	margin-top:20px;
+	margin-left:20px; 
+	/*border:solid 1px;*/
+	overflow:hidden;
+	z-index:1;
+	float:left;
+	position:relative;}
+.hugeCanvas{z-index:2;position:relative;cursor:pointer;}
+.Thumbnails{
+	display:inline-block;
+	position:absolute;
+	width:270px;
+	height:150px;cursor:pointer;
+	/*border:solid 1px;*/
+	margin-left:10px;margin-top:20px;}
+.box{width:18px;height:10px;border:solid 1px red;position:absolute;/*display:inline-block;*/left:0px;top: 0px;}
+.img{display:none;background-color:transparent;}
+.descrip{position:relative;display:inline-block;list-style-type:none;margin-top:200px;margin-left:10px;}

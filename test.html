@@ -1,35 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-	<style type="text/css" media="screen">
-		.test{width: 300px;height: 300px;background-color: hsl(43,80%,50%);
-		}
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{padding:0px;margin:0px;list-style:none;}
+		#menu{position:fixed;padding:0px;right:30px;width:100px;top:20%;margin:0px;z-index:10;list-style:none;}
+		#menu li{margin-top:10px;}
+		#menu .active a{background-color:#5094C0;color:white;}
+		#menu a{display:block;padding:10px 0px;font-weight:bolder;text-align:center;color:#5F9EA0;text-decoration:none;background-color:#FFFFFF;border:solid 2px #FFFFFF;border-radius:5px;}
+		.section1 h3{font-size:30px;margin:50px auto;width:668px;font-family:Fantasy;color:#5BE939;transition:transform 4s;position:relative;top:-305px;opacity:0;background-image: linear-gradient(red,blue);}
+		.section2 h3{font-size:80px;font-family:"KaiTi";color:white;margin-bottom:45px;opacity:0;}
+		.section2{text-align:center;padding:0px 50px;color:#510584;}
+		.personal_details{width:200px;text-align:left;float:left;margin-left:-33%;}
+		.personal_details li{margin-bottom:15px;/*border:solid 1px;*/}
+		.skills{text-align:left;width:450px;margin-left:140%;/*border:solid 1px;*/margin-bottom:50px;margin-bottom:70px;}
+		.section3 h3{position:relative;font-size:40px;font-family:"KaiTi";color:white;text-align:center;/*margin-top:-190px;*/display:block;}
 	</style>
+	<link type="text/css" rel="stylesheet" href="myself/jquery.fullPage.css">
+	<script src="myself/jquery-3.1.1.min.js"></script>
+	<script src="myself/jquery.fullPage.min.js"></script>
+	<script src="myself/main.js"></script>
 </head>
 <body>
-	<div class="test">
-		
-	</div>
-	
-	<input type="range">
-	<input type="color">
-	<input type="date">
-	<input type="datetime">
-	<input type="datetime-local">
-	<input type="month">
-	<input type="number">
-	<input type="search">
+	<ul id="menu">
+		<li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
+		<li data-menuanchor="page2" class=""><a href="#page2">信息</a></li>
+		<li data-menuanchor="page3" class=""><a href="#page3">学习</a></li>
+		<li data-menuanchor="page4" class=""><a href="#page4">作品</a></li>
+	</ul>
+	<div id="wrap">
+	    <section class="section section1">
+	        <h3>welcome!</h3>
+	    </section>
+	    <section class="section section2">
+	        <h3>个人信息与技能</h3>
+ 			<ul class="personal_details">
+ 				<li><span>姓名</span> |萧阳</li>
+ 				<li><span>年龄</span> |26</li>
+ 				<li><span>学历</span> |大专</li>
+ 				<li><span>坐标</span> |深圳</li>
+ 				<li><span>邮箱</span> | 845547926@qq.com</li>
+ 			</ul>
+ 			<div class="skills">
+ 				<b>HTML&CSS</b>
+ 				<p>
+ 					遵循W3C规范,写出规范化的代码.熟悉HTML5,CSS3,,CSS3动画效果.盒模型,float的特性.熟悉移动端响应式,flex,BFC.熟悉双飞翼布局,圣杯布局,满屏品字布局.了解canvas.
+ 				</p>
+ 				<b>JavaScript</b>
+ 				<p>
+	 				熟悉js原生代码,事件,DOM操作.js原型链,js面向对象编程,闭包,ajax.能够适应js+jQery实现常见效果	
+ 				</p>
+ 				<b>框架</b>
+ 				<p>
+ 					jQuery/vue/	
+ 				</p>
+ 				<b>工具</b>
+ 				<p>
+ 					GitHub/sass/webpack
+ 				</p>
 
-<script>
-	function test () {
-		var n=12;
-		if (true) {
-		let n=13;
-		}
-		console.log(n);
-	}
-	test();
-</script>
+ 			</div>
+	    </section>
+	    <div class="section section3">
+	        <h3>百度前端技术学院</h3>
+			<ul>
+				<li>JS基础练习1</li>
+				<li>JS基础练习2</li>
+				<li>JS基础练习3</li>
+				<li>JS基础练习4</li>
+				<li>JS基础练习5</li>
+			</ul>
+
+	    </div>
+	    <div class="section section4">
+	        <h3>第四屏</h3>
+	    </div>
+	</div>
 </body>
 </html>
