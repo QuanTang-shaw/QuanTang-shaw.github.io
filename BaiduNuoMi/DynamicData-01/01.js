@@ -35,7 +35,7 @@ Observer.prototype.convert=function (attr,val) {
 	})	
 }
 
-let app=new Observer(
+let app1=new Observer(
 	{
 		name:'jokey',
 		age:23
