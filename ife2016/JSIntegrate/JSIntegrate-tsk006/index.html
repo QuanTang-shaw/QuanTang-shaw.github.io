@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="jquery.js"></script>
+</head>
+<body>
+	<header class="head"><div>登录</div></header>
+	<div class="overfloat">
+		<div class="login-box" id="login-box">
+			<div class="login-head"><span>登陆</span>
+			<input type="button" value="X" id="cancel">
+			<!-- <img src="img/cancel.png" id="cancel" width="30" height="30"> -->
+			</div>
+			<div class="login-input">
+				<input type="text" placeholder="请输入用户名"><br>
+				<input type="text" placeholder="请输入密码">
+			</div>
+			<input type="button" value="登陆" class="login-btn">
+			<div class="bottomMove" name='bottom'></div>
+			<div class="rightMove" name='right'></div>
+			<div class="brMove" name='both'></div>
+		</div>
+		<ol>
+			<li>点击顶部盒子可拖拽</li>
+			<li>点击底边框和右边框可拖拽缩放</li>
+			<li>点击顶部栏可弹出盒子</li>
+		</ol>
+	</div>
+	<div class="cover" id="cover"></div>
+<script src="tsk006.js"></script>
+</body>
+</html>
